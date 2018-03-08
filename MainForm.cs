@@ -42,6 +42,7 @@ namespace TestingGrounds
             ItemsList.Add(sword1.Name);
             ItemsList.Add(sword2.Name);
             lstb_1.DataSource = ItemsList;
+
         }
 
         private void btn_add_Click(object sender, EventArgs e)
