@@ -36,8 +36,12 @@ namespace TestingGrounds
         {
             Weapon sword1 = new Weapon();
             sword1.Name = "Sword 1";
+            sword1.Value = 20;
+            sword1.Weight = 10;
             Weapon sword2 = new Weapon();
             sword2.Name = "Sword 2";
+            sword2.Value = 50;
+            sword2.Weight = 25;
             ItemsList.Add(sword1);          // insert object instead of string
             ItemsList.Add(sword2);          // insert object instead of string
             lstb_1.DataSource = ItemsList;
@@ -65,14 +69,6 @@ namespace TestingGrounds
             txtb_value.Text = SelectedObject.Value.ToString();
             txtb_weight.Text = SelectedObject.Weight.ToString();
 
-            //Item selectedObject = lstb_1.SelectedItem;
-            //string propertyCalled = "Name";
-            //var propertyName = selectedObject.GetType().GetProperty(propertyCalled).GetValue(selectedObject, null);
-
-            ////string selected = lstb_1.SelectedItem.ToString();
-            //txtb_name.Text = propertyName.ToString();
-            ////txtb_value.Text = selected.Value;
-            ////txtb_weight.Text = selected.Weight;
         }
     }
 }

@@ -8,19 +8,17 @@ namespace TestingGrounds
 {
     class Item
     {
-        //int Weight;
-        //int Value;
-        //string Name;
 
-        public Item()
+        public Item()   //Create Item template
         {
             Weight = 10;
             Value = 5;
             Name = "unknown";
         }
 
-        public int Weight { get; }
-        public int Value { get; }
+        //Declare the vars, while making them properties
+        public int Weight { get; set; }
+        public int Value { get; set; }
         public string Name { get; set; }
     }
 }
