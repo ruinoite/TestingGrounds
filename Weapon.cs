@@ -8,6 +8,33 @@ namespace TestingGrounds
 {
     class Weapon : Item
     {
+    
+        public Weapon(WeaponKind Kind)
+        {
+            switch(Kind)
+            {
+                case WeaponKind.IronSword:
+                    Damage = 10;
+                    Name = "sword";
+                    break;
+                
+                case WeaponKind.Staff:
+                    Damage = 120;
+                    Name = "Staff";
+                    break;
+            }
+        
+        }
+        
+        public enum WeaponKind
+        {
+            IronSword,
+            Staff,
+            Spear,
+            Mace,
+            Bow
+        
+        }
         //int Damage;
         //enum Type { Ranged, Meele, Magic };
         //int PDmgMul;
@@ -20,5 +47,9 @@ namespace TestingGrounds
         public int PDmgMul { get; set; }
         public int MDmgMul { get; set; }
         public int MDrnMul { get; set; }
+        
+        
+      
+        
     }
 }
