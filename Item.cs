@@ -9,9 +9,10 @@ namespace TestingGrounds
     class Item
     {
 
-        public Item()   //Create Item template
+        public Item()
         {
-
+            //No need for anything in here as Item is just a base and there
+            //will probably never be an object which is only an "Item"
         }
 
         //Declare the vars, while making them properties
