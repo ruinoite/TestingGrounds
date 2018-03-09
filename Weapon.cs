@@ -9,6 +9,7 @@ namespace TestingGrounds
     class Weapon : Item
     {
 
+
         public Weapon(string ThisName, int ThisValue, int ThisDamage, int ThisWeight, Type ThisType) // this allows you to create a weapon anywhere with any settings u want
         {
             Name = ThisName;
@@ -51,5 +52,6 @@ namespace TestingGrounds
             IronSword,
             WoodenBow
         }
+
     }
 }
