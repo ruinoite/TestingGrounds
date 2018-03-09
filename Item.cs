@@ -11,14 +11,12 @@ namespace TestingGrounds
 
         public Item()   //Create Item template
         {
-            Weight = 10;
-            Value = 5;
-            Name = "unknown";
+
         }
 
         //Declare the vars, while making them properties
-        public int Weight { get; set; }
-        public int Value { get; set; }
-        public string Name { get; set; }
+        public int Weight { get; protected set; } // Only Inside this class we can edit this value(and deprived classes)
+        public int Value { get; protected set; } // Only Inside this class we can edit this value
+        public string Name { get; protected set; } // Only Inside this class we can edit this value
     }
 }
