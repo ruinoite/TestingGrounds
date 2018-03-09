@@ -8,48 +8,50 @@ namespace TestingGrounds
 {
     class Weapon : Item
     {
-    
-        public Weapon(WeaponKind Kind)
+
+
+        public Weapon(string ThisName, int ThisValue, int ThisDamage, int ThisWeight, Type ThisType) // this allows you to create a weapon anywhere with any settings u want
         {
-            switch(Kind)
+            Name = ThisName;
+            Weight = ThisWeight;
+            Damage = ThisDamage;
+            DmgType = ThisType;
+            Value = ThisValue;            
+        }
+
+        public Weapon(PredefinedWeapons Thisweapon)
+        {
+            switch(Thisweapon)
             {
-                case WeaponKind.IronSword:
+                case PredefinedWeapons.IronSword:
+                    Name = "Iron Sword";
+                    Weight = 10;
                     Damage = 10;
-                    Name = "sword";
+                    DmgType = Type.Meele;
+                    Value = 20;
                     break;
-                
-                case WeaponKind.Staff:
-                    Damage = 120;
-                    Name = "Staff";
+                case PredefinedWeapons.WoodenBow:
+                    Name = "WoodenBow";
+                    Weight = 25;
+                    Value = 50;
+                    DmgType = Type.Ranged;
                     break;
             }
-        
         }
-        
-        public enum WeaponKind
-        {
-            IronSword,
-            Staff,
-            Spear,
-            Mace,
-            Bow
-        
-        }
-        //int Damage;
-        //enum Type { Ranged, Meele, Magic };
-        //int PDmgMul;
-        //int MDmgMul;
-        //int MDrnMul;
 
-        //Declare the vars, while making them properties
+        public enum Type { Ranged, Meele, Magic };
+
         public int Damage { get; set; }
-        public enum Type { Ranged, Meele, Magic } { get; set; }
+        public Type DmgType { get; set; }
         public int PDmgMul { get; set; }
         public int MDmgMul { get; set; }
         public int MDrnMul { get; set; }
-        
-        
-      
-        
+
+      public enum PredefinedWeapons
+        {
+            IronSword,
+            WoodenBow
+        }
+
     }
 }
