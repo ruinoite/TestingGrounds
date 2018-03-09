@@ -34,15 +34,15 @@ namespace TestingGrounds
 
         private void btn_do_Click(object sender, EventArgs e)
         {
-            Weapon sword1 = new Weapon();
-            sword1.Name = "Sword 1";
-            sword1.Value = 20;
-            sword1.Weight = 10;
-            Weapon sword2 = new Weapon();
-            sword2.Name = "Sword 2";
-            sword2.Value = 50;
-            sword2.Weight = 25;
-            ItemsList.Add(sword1);          // insert object instead of string
+            //Weapon sword1 = new Weapon();
+            //sword1.Name = "Sword 1";
+            //sword1.Value = 20;
+            //sword1.Weight = 10;
+            //Weapon sword2 = new Weapon();
+            //sword2.Name = "Sword 2";
+            //sword2.Value = 50;
+            //sword2.Weight = 25;
+            ItemsList.Add(Weapon.Weapon.sword1);          // insert object instead of string
             ItemsList.Add(sword2);          // insert object instead of string
             lstb_1.DataSource = ItemsList;
             lstb_1.DisplayMember = "Name"; // This is important. we already said take the list of items to display
