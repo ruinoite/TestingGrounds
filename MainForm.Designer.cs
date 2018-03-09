@@ -31,21 +31,21 @@
             this.lstb_1 = new System.Windows.Forms.ListBox();
             this.btn_do = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtb_name = new System.Windows.Forms.TextBox();
+            this.txtb_Name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtb_weight = new System.Windows.Forms.TextBox();
+            this.txtb_Weight = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtb_value = new System.Windows.Forms.TextBox();
+            this.txtb_Value = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtb_damage = new System.Windows.Forms.TextBox();
-            this.txtb_type = new System.Windows.Forms.TextBox();
+            this.txtb_Damage = new System.Windows.Forms.TextBox();
+            this.txtb_Type = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtb_pdmgmul = new System.Windows.Forms.TextBox();
+            this.txtb_PDmgMul = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtb_mdmgmult = new System.Windows.Forms.TextBox();
+            this.txtb_MDmgMul = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtb_mdrnmul = new System.Windows.Forms.TextBox();
+            this.txtb_MDrnMul = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -93,13 +93,13 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Name:";
             // 
-            // txtb_name
+            // txtb_Name
             // 
-            this.txtb_name.Location = new System.Drawing.Point(80, 104);
-            this.txtb_name.Name = "txtb_name";
-            this.txtb_name.ReadOnly = true;
-            this.txtb_name.Size = new System.Drawing.Size(200, 20);
-            this.txtb_name.TabIndex = 6;
+            this.txtb_Name.Location = new System.Drawing.Point(80, 104);
+            this.txtb_Name.Name = "txtb_Name";
+            this.txtb_Name.ReadOnly = true;
+            this.txtb_Name.Size = new System.Drawing.Size(200, 20);
+            this.txtb_Name.TabIndex = 6;
             // 
             // label2
             // 
@@ -111,13 +111,13 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Weight:";
             // 
-            // txtb_weight
+            // txtb_Weight
             // 
-            this.txtb_weight.Location = new System.Drawing.Point(80, 168);
-            this.txtb_weight.Name = "txtb_weight";
-            this.txtb_weight.ReadOnly = true;
-            this.txtb_weight.Size = new System.Drawing.Size(200, 20);
-            this.txtb_weight.TabIndex = 8;
+            this.txtb_Weight.Location = new System.Drawing.Point(80, 168);
+            this.txtb_Weight.Name = "txtb_Weight";
+            this.txtb_Weight.ReadOnly = true;
+            this.txtb_Weight.Size = new System.Drawing.Size(200, 20);
+            this.txtb_Weight.TabIndex = 8;
             // 
             // label3
             // 
@@ -129,13 +129,13 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Value:";
             // 
-            // txtb_value
+            // txtb_Value
             // 
-            this.txtb_value.Location = new System.Drawing.Point(80, 136);
-            this.txtb_value.Name = "txtb_value";
-            this.txtb_value.ReadOnly = true;
-            this.txtb_value.Size = new System.Drawing.Size(200, 20);
-            this.txtb_value.TabIndex = 10;
+            this.txtb_Value.Location = new System.Drawing.Point(80, 136);
+            this.txtb_Value.Name = "txtb_Value";
+            this.txtb_Value.ReadOnly = true;
+            this.txtb_Value.Size = new System.Drawing.Size(200, 20);
+            this.txtb_Value.TabIndex = 10;
             // 
             // label4
             // 
@@ -147,21 +147,21 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Damage:";
             // 
-            // txtb_damage
+            // txtb_Damage
             // 
-            this.txtb_damage.Location = new System.Drawing.Point(80, 232);
-            this.txtb_damage.Name = "txtb_damage";
-            this.txtb_damage.ReadOnly = true;
-            this.txtb_damage.Size = new System.Drawing.Size(200, 20);
-            this.txtb_damage.TabIndex = 12;
+            this.txtb_Damage.Location = new System.Drawing.Point(80, 232);
+            this.txtb_Damage.Name = "txtb_Damage";
+            this.txtb_Damage.ReadOnly = true;
+            this.txtb_Damage.Size = new System.Drawing.Size(200, 20);
+            this.txtb_Damage.TabIndex = 12;
             // 
-            // txtb_type
+            // txtb_Type
             // 
-            this.txtb_type.Location = new System.Drawing.Point(80, 200);
-            this.txtb_type.Name = "txtb_type";
-            this.txtb_type.ReadOnly = true;
-            this.txtb_type.Size = new System.Drawing.Size(200, 20);
-            this.txtb_type.TabIndex = 14;
+            this.txtb_Type.Location = new System.Drawing.Point(80, 200);
+            this.txtb_Type.Name = "txtb_Type";
+            this.txtb_Type.ReadOnly = true;
+            this.txtb_Type.Size = new System.Drawing.Size(200, 20);
+            this.txtb_Type.TabIndex = 14;
             // 
             // label5
             // 
@@ -183,13 +183,13 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Physical Dmg Mul:";
             // 
-            // txtb_pdmgmul
+            // txtb_PDmgMul
             // 
-            this.txtb_pdmgmul.Location = new System.Drawing.Point(144, 264);
-            this.txtb_pdmgmul.Name = "txtb_pdmgmul";
-            this.txtb_pdmgmul.ReadOnly = true;
-            this.txtb_pdmgmul.Size = new System.Drawing.Size(136, 20);
-            this.txtb_pdmgmul.TabIndex = 16;
+            this.txtb_PDmgMul.Location = new System.Drawing.Point(144, 264);
+            this.txtb_PDmgMul.Name = "txtb_PDmgMul";
+            this.txtb_PDmgMul.ReadOnly = true;
+            this.txtb_PDmgMul.Size = new System.Drawing.Size(136, 20);
+            this.txtb_PDmgMul.TabIndex = 16;
             // 
             // label7
             // 
@@ -201,13 +201,13 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Magic Dmg Mul:";
             // 
-            // txtb_mdmgmult
+            // txtb_MDmgMul
             // 
-            this.txtb_mdmgmult.Location = new System.Drawing.Point(144, 296);
-            this.txtb_mdmgmult.Name = "txtb_mdmgmult";
-            this.txtb_mdmgmult.ReadOnly = true;
-            this.txtb_mdmgmult.Size = new System.Drawing.Size(136, 20);
-            this.txtb_mdmgmult.TabIndex = 18;
+            this.txtb_MDmgMul.Location = new System.Drawing.Point(144, 296);
+            this.txtb_MDmgMul.Name = "txtb_MDmgMul";
+            this.txtb_MDmgMul.ReadOnly = true;
+            this.txtb_MDmgMul.Size = new System.Drawing.Size(136, 20);
+            this.txtb_MDmgMul.TabIndex = 18;
             // 
             // label8
             // 
@@ -219,13 +219,13 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Mana Drain Mul:";
             // 
-            // txtb_mdrnmul
+            // txtb_MDrnMul
             // 
-            this.txtb_mdrnmul.Location = new System.Drawing.Point(144, 328);
-            this.txtb_mdrnmul.Name = "txtb_mdrnmul";
-            this.txtb_mdrnmul.ReadOnly = true;
-            this.txtb_mdrnmul.Size = new System.Drawing.Size(136, 20);
-            this.txtb_mdrnmul.TabIndex = 20;
+            this.txtb_MDrnMul.Location = new System.Drawing.Point(144, 328);
+            this.txtb_MDrnMul.Name = "txtb_MDrnMul";
+            this.txtb_MDrnMul.ReadOnly = true;
+            this.txtb_MDrnMul.Size = new System.Drawing.Size(136, 20);
+            this.txtb_MDrnMul.TabIndex = 20;
             // 
             // label9
             // 
@@ -332,21 +332,21 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtb_mdrnmul);
+            this.Controls.Add(this.txtb_MDrnMul);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtb_mdmgmult);
+            this.Controls.Add(this.txtb_MDmgMul);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtb_pdmgmul);
+            this.Controls.Add(this.txtb_PDmgMul);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtb_type);
+            this.Controls.Add(this.txtb_Type);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtb_damage);
+            this.Controls.Add(this.txtb_Damage);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtb_value);
+            this.Controls.Add(this.txtb_Value);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtb_weight);
+            this.Controls.Add(this.txtb_Weight);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtb_name);
+            this.Controls.Add(this.txtb_Name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_do);
             this.Controls.Add(this.lstb_1);
@@ -363,21 +363,21 @@
         private System.Windows.Forms.ListBox lstb_1;
         private System.Windows.Forms.Button btn_do;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtb_name;
+        private System.Windows.Forms.TextBox txtb_Name;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtb_weight;
+        private System.Windows.Forms.TextBox txtb_Weight;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtb_value;
+        private System.Windows.Forms.TextBox txtb_Value;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtb_damage;
-        private System.Windows.Forms.TextBox txtb_type;
+        private System.Windows.Forms.TextBox txtb_Damage;
+        private System.Windows.Forms.TextBox txtb_Type;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtb_pdmgmul;
+        private System.Windows.Forms.TextBox txtb_PDmgMul;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtb_mdmgmult;
+        private System.Windows.Forms.TextBox txtb_MDmgMul;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtb_mdrnmul;
+        private System.Windows.Forms.TextBox txtb_MDrnMul;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;

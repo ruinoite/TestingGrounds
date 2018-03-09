@@ -67,14 +67,14 @@ namespace TestingGrounds
 
 
                 //Fill in the textboxes with info about the selected item
-                txtb_name.Text = SelectedObject.Name;
-                txtb_value.Text = SelectedObject.Value.ToString();
-                txtb_weight.Text = SelectedObject.Weight.ToString();
-                txtb_type.Text = SelectedObject.DmgType.ToString();
-                txtb_damage.Text = SelectedObject.Damage.ToString();
-                txtb_pdmgmul.Text = SelectedObject.PDmgMul.ToString();
-                txtb_mdmgmult.Text = SelectedObject.MDmgMul.ToString();
-                txtb_mdrnmul.Text = SelectedObject.MDrnMul.ToString();
+                txtb_Name.Text = SelectedObject.Name;
+                txtb_Value.Text = SelectedObject.Value.ToString();
+                txtb_Weight.Text = SelectedObject.Weight.ToString();
+                txtb_Type.Text = SelectedObject.DmgType.ToString();
+                txtb_Damage.Text = SelectedObject.Damage.ToString();
+                txtb_PDmgMul.Text = SelectedObject.PDmgMul.ToString();
+                txtb_MDmgMul.Text = SelectedObject.MDmgMul.ToString();
+                txtb_MDrnMul.Text = SelectedObject.MDrnMul.ToString();
             
                 txtb_Def.Text = "N/A w/ this item";
                 txtb_HPBoost.Text = "N/A w/ this item";
@@ -88,20 +88,20 @@ namespace TestingGrounds
                 Armour SelectedObject = (Armour)lstb_1.SelectedItem;
 
                 //Fill in the textboxes with info about the selected item
-                txtb_name.Text = SelectedObject.Name;
-                txtb_value.Text = SelectedObject.Value.ToString();
-                txtb_weight.Text = SelectedObject.Weight.ToString();
+                txtb_Name.Text = SelectedObject.Name;
+                txtb_Value.Text = SelectedObject.Value.ToString();
+                txtb_Weight.Text = SelectedObject.Weight.ToString();
                 txtb_Def.Text = SelectedObject.Defense.ToString();
                 txtb_HPBoost.Text = SelectedObject.HPBoost.ToString();
                 txtb_MBoost.Text = SelectedObject.MBoost.ToString();
                 txtb_PDefMul.Text = SelectedObject.PDefMul.ToString();
                 txtb_MDefMul.Text = SelectedObject.MDefMul.ToString();
 
-                txtb_type.Text = "N/A w/ this item";
-                txtb_damage.Text = "N/A w/ this item";
-                txtb_pdmgmul.Text = "N/A w/ this item";
-                txtb_mdmgmult.Text = "N/A w/ this item";
-                txtb_mdrnmul.Text = "N/A w/ this item";
+                txtb_Type.Text = "N/A w/ this item";
+                txtb_Damage.Text = "N/A w/ this item";
+                txtb_PDmgMul.Text = "N/A w/ this item";
+                txtb_MDmgMul.Text = "N/A w/ this item";
+                txtb_MDrnMul.Text = "N/A w/ this item";
 
             }
 
