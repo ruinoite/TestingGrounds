@@ -19,7 +19,7 @@ namespace TestingGrounds
                     GP = 50;
                     Level = 1;
                     Stamina = 60;
-                    EquipedArmour = Armour.PredefinedArmours.IronArmour.ToString(); //needs fixing
+                    EquipedArmour = //Prolly need to make an inventory, no idea how it will go for NPCs. Maybe a temp inventory as NPCs come and go.
                     EquipedWeapon = null;
 
         }
