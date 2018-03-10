@@ -9,8 +9,9 @@ namespace TestingGrounds
     class Weapon : Item
     {
 
-
-        public Weapon(string ThisName, int ThisValue, int ThisDamage, int ThisWeight, Type ThisType, int PDM, int MDM, int MDrM) // this allows you to create a weapon anywhere with any settings u want
+        // this allows you to create a weapon anywhere with any settings u want
+        public Weapon(string ThisName, int ThisValue, int ThisDamage, int ThisWeight,
+            Type ThisType, int PDM, int MDM, int MDrM)
         {
             //Take in arguments and create a weapon based on them
             Name = ThisName;

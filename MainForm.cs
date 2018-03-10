@@ -13,7 +13,9 @@ namespace TestingGrounds
     public partial class MainForm : Form
     {
 
-        private BindingList<Item> ItemsList; // Declare a binding list of type Item, so it can hold items and not just text
+        // Declare a binding list of type Item, so it can hold items and not just text
+        private BindingList<Item> ItemsList;
+
         public MainForm()
         {
             InitializeComponent();
@@ -21,7 +23,8 @@ namespace TestingGrounds
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            ItemsList = new BindingList<Item>(); // Initialise the binding list of type Item
+            // Initialise the binding list of type Item
+            ItemsList = new BindingList<Item>();
 
         }
 
@@ -40,12 +43,21 @@ namespace TestingGrounds
             //Add an IronArmour predefined Armour (predefined in the Armour Class)
             Armour ArmourIron = new Armour(Armour.PredefinedArmours.IronArmour);
 
+            //Add custom consumable using parameters(Name,Value,Weight,HPGain,StamGain,ManaGain)
+            Consumable CustomApple = new Consumable("Custom Apple", 2, 1, 40, 12, 5);
+
+            //Add an IronSword predefined weapon (predefined in the Weapon Class)
+            Consumable PreApple = new Consumable(Consumable.PredefinedConsumables.PredefApple);
+
             //Insert the previously generated items to the ItemsList
             ItemsList.Add(SwordLeIron);
             ItemsList.Add(Customstuff);
             ItemsList.Add(NightWeapon);
             ItemsList.Add(CustomArmour);
             ItemsList.Add(ArmourIron);
+            ItemsList.Add(CustomApple);
+            ItemsList.Add(PreApple);
+
             //Update the listbox with items existing in ItemsList
             lstb_1.DataSource = ItemsList;
             //Tell the listbox to show the Name var of each item
@@ -81,6 +93,9 @@ namespace TestingGrounds
                 txtb_MBoost.Text = "N/A w/ this item";
                 txtb_PDefMul.Text = "N/A w/ this item";
                 txtb_MDefMul.Text = "N/A w/ this item";
+                txtb_HPGain.Text = "N/A w/ this item";
+                txtb_StamGain.Text = "N/A w/ this item";
+                txtb_ManaGain.Text = "N/A w/ this item";
 
                 //else, check if the selected item is of Armour type
             }else if (lstb_1.SelectedItem.GetType() == typeof(Armour))
@@ -102,9 +117,43 @@ namespace TestingGrounds
                 txtb_PDmgMul.Text = "N/A w/ this item";
                 txtb_MDmgMul.Text = "N/A w/ this item";
                 txtb_MDrnMul.Text = "N/A w/ this item";
+                txtb_HPGain.Text = "N/A w/ this item";
+                txtb_StamGain.Text = "N/A w/ this item";
+                txtb_ManaGain.Text = "N/A w/ this item";
+
+            }
+            else if (lstb_1.SelectedItem.GetType() == typeof(Consumable))
+            {
+                Consumable SelectedObject = (Consumable)lstb_1.SelectedItem;
+
+                //Fill in the textboxes with info about the selected item
+                txtb_Name.Text = SelectedObject.Name;
+                txtb_Value.Text = SelectedObject.Value.ToString();
+                txtb_Weight.Text = SelectedObject.Weight.ToString();
+                txtb_HPGain.Text = SelectedObject.HPGain.ToString();
+                txtb_StamGain.Text = SelectedObject.StamGain.ToString();
+                txtb_ManaGain.Text = SelectedObject.ManaGain.ToString();
+
+                txtb_Def.Text = "N/A w/ this item";
+                txtb_HPBoost.Text = "N/A w/ this item";
+                txtb_MBoost.Text = "N/A w/ this item";
+                txtb_Type.Text = "N/A w/ this item";
+                txtb_Damage.Text = "N/A w/ this item";
+                txtb_PDmgMul.Text = "N/A w/ this item";
+                txtb_MDmgMul.Text = "N/A w/ this item";
+                txtb_MDrnMul.Text = "N/A w/ this item";
+                txtb_PDefMul.Text = "N/A w/ this item";
+                txtb_MDefMul.Text = "N/A w/ this item";
 
             }
 
+        }
+
+        private void btn_NPCsForm_Click(object sender, EventArgs e)
+        {
+            NPCForm NPCForm = new NPCForm();
+
+            NPCForm.ShowDialog();
         }
     }
 }

@@ -56,6 +56,13 @@
             this.txtb_Def = new System.Windows.Forms.TextBox();
             this.txtb_MDefMul = new System.Windows.Forms.TextBox();
             this.txtb_PDefMul = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtb_HPGain = new System.Windows.Forms.TextBox();
+            this.txtb_StamGain = new System.Windows.Forms.TextBox();
+            this.txtb_ManaGain = new System.Windows.Forms.TextBox();
+            this.btn_NPCsForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstb_1
@@ -75,11 +82,11 @@
             // 
             this.btn_do.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_do.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_do.Location = new System.Drawing.Point(508, 324);
+            this.btn_do.Location = new System.Drawing.Point(488, 376);
             this.btn_do.Name = "btn_do";
-            this.btn_do.Size = new System.Drawing.Size(75, 32);
+            this.btn_do.Size = new System.Drawing.Size(95, 32);
             this.btn_do.TabIndex = 1;
-            this.btn_do.Text = "Do";
+            this.btn_do.Text = "Generate";
             this.btn_do.UseVisualStyleBackColor = true;
             this.btn_do.Click += new System.EventHandler(this.btn_do_Click);
             // 
@@ -317,11 +324,84 @@
             this.txtb_PDefMul.Size = new System.Drawing.Size(136, 20);
             this.txtb_PDefMul.TabIndex = 30;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(296, 264);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 20);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "HP Gain:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(296, 296);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(110, 20);
+            this.label15.TabIndex = 32;
+            this.label15.Text = "Stamina Gain:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(296, 328);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(91, 20);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "Mana Gain:";
+            // 
+            // txtb_HPGain
+            // 
+            this.txtb_HPGain.Location = new System.Drawing.Point(408, 264);
+            this.txtb_HPGain.Name = "txtb_HPGain";
+            this.txtb_HPGain.ReadOnly = true;
+            this.txtb_HPGain.Size = new System.Drawing.Size(176, 20);
+            this.txtb_HPGain.TabIndex = 34;
+            // 
+            // txtb_StamGain
+            // 
+            this.txtb_StamGain.Location = new System.Drawing.Point(408, 296);
+            this.txtb_StamGain.Name = "txtb_StamGain";
+            this.txtb_StamGain.ReadOnly = true;
+            this.txtb_StamGain.Size = new System.Drawing.Size(176, 20);
+            this.txtb_StamGain.TabIndex = 35;
+            // 
+            // txtb_ManaGain
+            // 
+            this.txtb_ManaGain.Location = new System.Drawing.Point(408, 328);
+            this.txtb_ManaGain.Name = "txtb_ManaGain";
+            this.txtb_ManaGain.ReadOnly = true;
+            this.txtb_ManaGain.Size = new System.Drawing.Size(176, 20);
+            this.txtb_ManaGain.TabIndex = 36;
+            // 
+            // btn_NPCsForm
+            // 
+            this.btn_NPCsForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_NPCsForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NPCsForm.Location = new System.Drawing.Point(8, 376);
+            this.btn_NPCsForm.Name = "btn_NPCsForm";
+            this.btn_NPCsForm.Size = new System.Drawing.Size(96, 32);
+            this.btn_NPCsForm.TabIndex = 37;
+            this.btn_NPCsForm.Text = "NPCs";
+            this.btn_NPCsForm.UseVisualStyleBackColor = true;
+            this.btn_NPCsForm.Click += new System.EventHandler(this.btn_NPCsForm_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 362);
+            this.ClientSize = new System.Drawing.Size(592, 417);
+            this.Controls.Add(this.btn_NPCsForm);
+            this.Controls.Add(this.txtb_ManaGain);
+            this.Controls.Add(this.txtb_StamGain);
+            this.Controls.Add(this.txtb_HPGain);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.txtb_PDefMul);
             this.Controls.Add(this.txtb_MDefMul);
             this.Controls.Add(this.txtb_Def);
@@ -388,6 +468,13 @@
         private System.Windows.Forms.TextBox txtb_Def;
         private System.Windows.Forms.TextBox txtb_MDefMul;
         private System.Windows.Forms.TextBox txtb_PDefMul;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtb_HPGain;
+        private System.Windows.Forms.TextBox txtb_StamGain;
+        private System.Windows.Forms.TextBox txtb_ManaGain;
+        private System.Windows.Forms.Button btn_NPCsForm;
     }
 }
 
