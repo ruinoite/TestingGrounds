@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestingGrounds.Forms;
 
 namespace TestingGrounds
 {
@@ -15,6 +16,9 @@ namespace TestingGrounds
 
         // Declare a binding list of type Item, so it can hold items and not just text
         private BindingList<Item> ItemsList;
+
+        //Declare the Player
+        Player Ply;
 
         public MainForm()
         {
@@ -25,13 +29,21 @@ namespace TestingGrounds
         {
             // Initialise the binding list of type Item
             ItemsList = new BindingList<Item>();
+            Ply = new Player();
 
+            Weapon InventoryIronSword = new Weapon(Weapon.PredefinedWeapons.GenericIronSword);
+
+            Ply.PlayerInventory.Add(new Weapon("magic woop", 200, 10, 20, Weapon.Type.Magic, 1, 3, 0));
+            Ply.PlayerInventory.Add(InventoryIronSword);
+
+            lstb_1.DataSource = Ply.PlayerInventory;
+            lstb_1.DisplayMember = "Name";
         }
 
         private void btn_do_Click(object sender, EventArgs e)
         {
             //Add an IronSword predefined weapon (predefined in the Weapon Class)
-            Weapon SwordLeIron = new Weapon(Weapon.PredefinedWeapons.IronSword);
+            Weapon SwordLeIron = new Weapon(Weapon.PredefinedWeapons.GenericIronSword);
 
             //Add custom weapons using parameters(Name,Value,Damage,Weight,Type,Phys Dmg Mul,Mag Dmg Mul,Mana Drain Mul)
             Weapon Customstuff = new Weapon("magic woop",200,10,20,Weapon.Type.Magic,1,3,0);
@@ -41,7 +53,7 @@ namespace TestingGrounds
             Armour CustomArmour = new Armour("Custom Armour", 500, 50, 40, 12, 5, 200, 20);
 
             //Add an IronArmour predefined Armour (predefined in the Armour Class)
-            Armour ArmourIron = new Armour(Armour.PredefinedArmours.IronArmour);
+            Armour ArmourIron = new Armour(Armour.PredefinedArmours.GenericIronArmour);
 
             //Add custom consumable using parameters(Name,Value,Weight,HPGain,StamGain,ManaGain)
             Consumable CustomApple = new Consumable("Custom Apple", 2, 1, 40, 12, 5);
@@ -57,6 +69,8 @@ namespace TestingGrounds
             ItemsList.Add(ArmourIron);
             ItemsList.Add(CustomApple);
             ItemsList.Add(PreApple);
+
+
 
             //Update the listbox with items existing in ItemsList
             lstb_1.DataSource = ItemsList;
@@ -154,6 +168,13 @@ namespace TestingGrounds
             NPCForm NPCForm = new NPCForm();
 
             NPCForm.ShowDialog();
+        }
+
+        private void btn_Inventory_Click(object sender, EventArgs e)
+        {
+            InventoryForm InventoryForm = new InventoryForm(Ply);
+
+            InventoryForm.ShowDialog();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestingGrounds
 {
-    class Armour : Item
+    public class Armour : Item
     {
 
         public Armour(string IName, int IValue, int IWeight, int IDefense, int IPDefMul, int IMDefMul, int IHPBoost, int IMBoost) // this allows you to create an armour anywhere with any settings u want
@@ -28,8 +28,8 @@ namespace TestingGrounds
             switch (ThisArmour)
             {
                 //Declaration of a predefined armour
-                case PredefinedArmours.IronArmour:
-                    Name = "Predefined Iron Armour";
+                case PredefinedArmours.GenericIronArmour:
+                    Name = "Iron Armour";
                     Weight = 10;
                     Value = 20;
                     Defense = 10;
@@ -44,7 +44,7 @@ namespace TestingGrounds
         //Declaration of possible predefined armours
         public enum PredefinedArmours
         {
-            IronArmour
+            GenericIronArmour
         }
         /// <summary>
         /// Value of Armour Defense

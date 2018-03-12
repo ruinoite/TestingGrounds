@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace TestingGrounds
 {
-    class NPC : Creature
+    public class NPC : Creature
     {
 
         // this allows you to create a NPC anywhere with any settings u want
         public NPC(string IName, int IHP, int IMana, int ILevel, Type IType, Specialty ISpecialty,
-            int IEXPDrop, int IGPDrop, Item IEquipedArmour, Item IEquipedWeapon)
+            int IEXPDrop, int IGPDrop, Armour IEquipedArmour, Weapon IEquipedWeapon)
         {
             //Take in arguments and create a NPC based on them
             Name = IName;
@@ -33,6 +33,8 @@ namespace TestingGrounds
             {
                 //Declaration of predefined NPCs
                 case PredefinedNPCs.Goblin:
+                    Weapon GenericIronSword = new Weapon(Weapon.PredefinedWeapons.GenericIronSword);
+                    Armour GenericIronArmour = new Armour(Armour.PredefinedArmours.GenericIronArmour);
                     Name = "Goblin(Predefined)";
                     HP = 20;
                     Mana = 10;
@@ -41,8 +43,8 @@ namespace TestingGrounds
                     NPCSpecialty = Specialty.Meele;
                     EXPDrop = 10;
                     GPDrop = 5;
-                    EquipedArmour = null;
-                    EquipedWeapon = null;
+                    EquipedArmour = GenericIronArmour;
+                    EquipedWeapon = GenericIronSword;
                     break;
                 case PredefinedNPCs.MBird:
                     Name = "Magic Birb(Predefined)";

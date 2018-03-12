@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestingGrounds
 {
-    class Creature
+    public class Creature
     {
 
         public Creature()
@@ -20,8 +20,8 @@ namespace TestingGrounds
         public int Mana { get; protected set; } // Only Inside this class we can edit this value
         public int Level { get; protected set; } // Only Inside this class we can edit this value
         public string Name { get; protected set; } // Only Inside this class we can edit this value
-        public Item EquipedArmour { get; protected set; } // Only Inside this class we can edit this value
-        public Item EquipedWeapon { get; protected set; } // Only Inside this class we can edit this value
+        public Armour EquipedArmour { get; protected set; } // Only Inside this class we can edit this value
+        public Weapon EquipedWeapon { get; protected set; } // Only Inside this class we can edit this value
 
     }
 }

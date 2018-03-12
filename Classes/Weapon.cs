@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestingGrounds
 {
-    class Weapon : Item
+    public class Weapon : Item
     {
 
         // this allows you to create a weapon anywhere with any settings u want
@@ -29,7 +29,7 @@ namespace TestingGrounds
             switch(Thisweapon)
             {
                 //Declaration of predefined weapons
-                case PredefinedWeapons.IronSword:
+                case PredefinedWeapons.GenericIronSword:
                     Name = "Iron Sword";
                     Weight = 10;
                     Damage = 10;
@@ -39,8 +39,8 @@ namespace TestingGrounds
                     MDmgMul = 0;
                     MDrnMul = 0;
                     break;
-                case PredefinedWeapons.WoodenBow:
-                    Name = "WoodenBow";
+                case PredefinedWeapons.GenericWoodenBow:
+                    Name = "Wooden Bow";
                     Weight = 25;
                     Value = 50;
                     DmgType = Type.Ranged;
@@ -59,8 +59,8 @@ namespace TestingGrounds
       public enum PredefinedWeapons
         {
             //Declaration of possible predefined weapons
-            IronSword,
-            WoodenBow
+            GenericIronSword,
+            GenericWoodenBow
         }
 
     }

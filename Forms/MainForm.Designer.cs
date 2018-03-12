@@ -63,6 +63,7 @@
             this.txtb_StamGain = new System.Windows.Forms.TextBox();
             this.txtb_ManaGain = new System.Windows.Forms.TextBox();
             this.btn_NPCsForm = new System.Windows.Forms.Button();
+            this.btn_Inventory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstb_1
@@ -390,11 +391,24 @@
             this.btn_NPCsForm.UseVisualStyleBackColor = true;
             this.btn_NPCsForm.Click += new System.EventHandler(this.btn_NPCsForm_Click);
             // 
+            // btn_Inventory
+            // 
+            this.btn_Inventory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Inventory.Location = new System.Drawing.Point(112, 376);
+            this.btn_Inventory.Name = "btn_Inventory";
+            this.btn_Inventory.Size = new System.Drawing.Size(96, 32);
+            this.btn_Inventory.TabIndex = 38;
+            this.btn_Inventory.Text = "Inventory";
+            this.btn_Inventory.UseVisualStyleBackColor = true;
+            this.btn_Inventory.Click += new System.EventHandler(this.btn_Inventory_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 417);
+            this.Controls.Add(this.btn_Inventory);
             this.Controls.Add(this.btn_NPCsForm);
             this.Controls.Add(this.txtb_ManaGain);
             this.Controls.Add(this.txtb_StamGain);
@@ -475,6 +489,7 @@
         private System.Windows.Forms.TextBox txtb_StamGain;
         private System.Windows.Forms.TextBox txtb_ManaGain;
         private System.Windows.Forms.Button btn_NPCsForm;
+        private System.Windows.Forms.Button btn_Inventory;
     }
 }
 

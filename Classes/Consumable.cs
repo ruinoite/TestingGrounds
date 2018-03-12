@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestingGrounds
 {
-    class Consumable : Item
+    public class Consumable : Item
     {
         public Consumable(string IName, int IValue, int IWeight, int IHPGain, int IStamGain, int IManaGain) // this allows you to create a consumable anywhere with any settings u want
         {

@@ -33,19 +33,23 @@ namespace TestingGrounds
             //Create the Player
             Player Player = new Player();
 
+            //Create some generic weapons for NPCs to wield
+            Weapon GenericIronSword = new Weapon(Weapon.PredefinedWeapons.GenericIronSword);
+            Armour GenericIronArmour = new Armour(Armour.PredefinedArmours.GenericIronArmour);
+
             //Create some predefined NPCs
-            NPC MBird = new NPC(NPC.PredefinedNPCs.MBird);
-            NPC Goblin = new NPC(NPC.PredefinedNPCs.Goblin);
+            //NPC MBird = new NPC(NPC.PredefinedNPCs.MBird);
+            //NPC Goblin = new NPC(NPC.PredefinedNPCs.Goblin);
 
             //Create a custom NPC using parameters(Name,HP,Mana,LVL,Type,Specialty
             //EXPDrop,GPDrop,EquipedArmour,EquipedWeap)
             NPC CustomHuman = new NPC("John Johnson", 100, 20,5,NPC.Type.Ground,NPC.Specialty.Meele,
-                20,30,null,null);
+                20,30,GenericIronArmour,GenericIronSword);
 
             //Insert the previously generated Creatures to the CreaturesList
             CreaturesList.Add(Player);
-            CreaturesList.Add(MBird);
-            CreaturesList.Add(Goblin);
+            //CreaturesList.Add(MBird);
+            //CreaturesList.Add(Goblin);
             CreaturesList.Add(CustomHuman);
 
             //Update the listbox with Creatures existing in CreaturesList
@@ -71,8 +75,8 @@ namespace TestingGrounds
                 txtb_Name.Text = SelectedObject.Name;
                 txtb_Type.Text = "N/A w/ this creature";
                 txtb_Specialty.Text = "N/A w/ this creature";
-                txtb_Weapon.Text = SelectedObject.EquipedWeapon.ToString();
-                txtb_Armour.Text = SelectedObject.EquipedArmour.ToString();
+                txtb_Weapon.Text = SelectedObject?.EquipedWeapon?.ToString();
+                txtb_Armour.Text = SelectedObject?.EquipedArmour?.ToString();
                 txtb_HP.Text = SelectedObject.HP.ToString();
                 txtb_Mana.Text = SelectedObject.Mana.ToString();
                 txtb_Stamina.Text = SelectedObject.Stamina.ToString();
@@ -94,8 +98,8 @@ namespace TestingGrounds
                 txtb_Name.Text = SelectedObject.Name;
                 txtb_Type.Text = SelectedObject.NPCType.ToString();
                 txtb_Specialty.Text = SelectedObject.NPCSpecialty.ToString();
-                txtb_Weapon.Text = SelectedObject.EquipedWeapon.ToString();
-                txtb_Armour.Text = SelectedObject.EquipedArmour.ToString();
+                txtb_Weapon.Text = SelectedObject.EquipedWeapon.Name.ToString();
+                txtb_Armour.Text = SelectedObject.EquipedArmour.Name.ToString();
                 txtb_HP.Text = SelectedObject.HP.ToString();
                 txtb_Mana.Text = SelectedObject.Mana.ToString();
                 txtb_Stamina.Text = "N/A w/ this creature";
